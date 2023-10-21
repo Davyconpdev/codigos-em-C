@@ -13,13 +13,13 @@ int main () {
     int opcao;
     int parcelas;
 
-    printf("preÁo do produto:");
+    printf("pre√ßo do produto:");
     scanf("%f",&precoproduto);
 
     printf("\nForma de pagamento.\n");
-    printf("1- ¿ vista \n");
+    printf("1- √Ä vista \n");
     printf("2- A prazo \n");
-    printf("\nDigite a opÁ„o desejada:\n");
+    printf("\nDigite a op√ß√£o desejada:\n");
     scanf("%d",&opcao);
     system("cls || clear");
 
@@ -29,10 +29,10 @@ int main () {
         desconto = precoproduto * 0.1;
         precofinal = precoproduto - desconto;
 {
-     printf("PreÁo do produto: R$ %.2f \n", precoproduto);
-        printf("Forma de pagamento: ¿ vista \n" );
+     printf("Pre√ßo do produto: R$ %.2f \n", precoproduto);
+        printf("Forma de pagamento: √Ä vista \n" );
         printf("Desconto: R$ %.2f \n", desconto);
-        printf("PreÁo final: R$ %.2f \n", precofinal);
+        printf("Pre√ßo final: R$ %.2f \n", precofinal);
 }
 break;
 
@@ -44,7 +44,7 @@ break;
 
             if (parcelas > 6)
             {
-                printf("Parcelamento em atÈ 6x. \n");
+                printf("Parcelamento em at√© 6x. \n");
                 printf("Digite a quantidade de parcelas novamente. \n");
             } 
         } while (parcelas > 6);
@@ -54,13 +54,13 @@ break;
             system("cls");
 {
     printf("Quantidade de parcela: %d \n", parcelas);
-        printf("PreÁo das parcelas: R$ %.2f \n", precoparcelado);
-        printf("PreÁo final: R$ %.2f \n", precofinal);
+        printf("Pre√ßo das parcelas: R$ %.2f \n", precoparcelado);
+        printf("Pre√ßo final: R$ %.2f \n", precofinal);
 }
 break;
 
     default:
-        printf("OpÁ„o inv·lida.");
+        printf("Op√ß√£o inv√°lida.");
     }
     return 0;
 }
