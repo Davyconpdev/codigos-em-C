@@ -6,7 +6,7 @@
 int main() {
     setlocale(LC_ALL,"portuguese");
 
-//declarar variáveis.
+//declarar variÃ¡veis.
     int idade;
     float primeiranota;
     float segundanota;
@@ -21,18 +21,18 @@ scanf("%s",&nome);
 printf("idade:");
 scanf("%d",&idade);
 
-printf("Digite a 1ª nota:");
+printf("Digite a 1Âª nota:");
 scanf("%1f",&primeiranota);
 
-printf("Digite a 2ª nota:");
+printf("Digite a 2Âª nota:");
 scanf("%1f",&segundanota);
 
-printf("Digite a 3ª nota:");
+printf("Digite a 3Âª nota:");
 scanf("%1f",&terceiranota);
 
 system("cls || clear");
 
-//calculo média.
+//calculo mÃ©dia.
 media = (primeiranota+segundanota+terceiranota) / 3;
 
 //o que vai aparecer na interface.
@@ -44,7 +44,7 @@ else {
     printf("Aprovado!\n");
 }
 printf("Nome: %s \n", nome);
-printf("Sua Média: %.2f \n", media);
+printf("Sua MÃ©dia: %.2f \n", media);
 
 return 0;
 
