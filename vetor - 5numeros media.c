@@ -12,7 +12,7 @@ float soma = 0, media = 0;
 
 for (i = 0; i < n; i++) {
 
-    printf("digite o %dº número:",i+1);
+    printf("digite o %dÂº nÃºmero:",i+1);
     scanf("%d",&numero[i]);
     fflush(stdin);
     
@@ -36,17 +36,17 @@ for (i = 0; i < n; i++) {
     media = soma / n;
 
  system("cls");
- printf("Quantidade de números pares: %d\n", par);
- printf("Quantidade de números impares: %d\n", impar);
+ printf("Quantidade de nÃºmeros pares: %d\n", par);
+ printf("Quantidade de nÃºmeros impares: %d\n", impar);
  printf("\n");
- printf("Quantidade de números positivos: %d\n", positivo);
- printf("Quantidade de números negativos: %d\n", negativo);
+ printf("Quantidade de nÃºmeros positivos: %d\n", positivo);
+ printf("Quantidade de nÃºmeros negativos: %d\n", negativo);
  printf("\n");
- printf("Maior número: %d\n", maiornumero);
- printf("Menor número: %d\n", menornumero);
+ printf("Maior nÃºmero: %d\n", maiornumero);
+ printf("Menor nÃºmero: %d\n", menornumero);
  printf("\n");
- printf("Quantidade de números inseridos: %d\n", n);
- printf("Média dos números inseridos: %.1f\n", media);
+ printf("Quantidade de nÃºmeros inseridos: %d\n", n);
+ printf("MÃ©dia dos nÃºmeros inseridos: %.1f\n", media);
 
  return 0;
 }
