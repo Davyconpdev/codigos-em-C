@@ -16,7 +16,7 @@ int main()
     for (i = 0; i < tamanho; i++)
     {
 
-        printf("digite a %d™ nota:", i+1);
+        printf("digite a %d¬™ nota:", i+1);
         scanf("%f", &nota[i]);
         soma += nota[i];
 
@@ -32,16 +32,16 @@ int main()
         printf("APROVADO!\n");
     } else if (media >= 5)
     {
-        printf("RECUPERA«√O.\n");
+        printf("RECUPERA√á√ÉO.\n");
     } else {
         printf("REPROVADO.\n");
     }
 
     for (i = 0; i < tamanho; i++)
     {
-    printf("%d™ nota: %.1f \n",i+1, nota[i]); 
+    printf("%d¬™ nota: %.1f \n",i+1, nota[i]); 
     }
-    printf("MÈdia: %.1f\n",media);
+    printf("M√©dia: %.1f\n",media);
 
     return 0;
 }
