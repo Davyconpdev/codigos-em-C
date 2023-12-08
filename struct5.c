@@ -1,62 +1,52 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <locale.h>
 
-#define tam 100
+#define tam 200
 #define n 3
-#define c 2
 
-struct dados_aluno
+struct informe_livro 
 {
     char nome[tam];
-    int idade;
-    float nota[c];
-    float soma;
-    float media;
+    char autor[tam];
+    char categoria[tam];
+    float preco;
 };
+ 
+ int main() 
+ {
+ setlocale(LC_ALL,"portuguese");
+ 
+struct informe_livro livro[n];
+int i = 0;
 
-int main()
+for (i = 0; i < n; i++)
 {
-    setlocale(LC_ALL, "portuguese");
+printf("\nSolicitando informações do livro.\n");
+printf("Nome do livro:");
+gets(livro[i].nome);
 
-    struct dados_aluno aluno[n];
-    int i = 0, j = 0;
+printf("Autor:");
+gets(livro[i].autor);
+fflush(stdin);
 
-    for (i = 0; i < n; i++)
-    {
-        printf("\nSolicitando dados do aluno.\n");
-        printf("Nome:");
-        gets(aluno[i].nome);
-        fflush(stdin);
+printf("Categoria:");
+gets(livro[i].categoria);
 
-        printf("Idade:");
-        scanf("%d", &aluno[i].idade);
-        fflush(stdin);
+printf("Preço (R$):");
+scanf("%f",&livro[i].preco);
+fflush(stdin);
+}
+system("cls || clear");
 
-        for (j = 0; j < c; j++)
-        {
-            printf("%dª nota:", j + 1);
-            scanf("%f", &aluno[i].nota[j]);
-            aluno[i].soma += aluno[i].nota[j];
-        }
-        aluno[i].media = aluno[i].soma / c;
-        aluno[i].soma = 0;
-        fflush(stdin);
-    }
-    
-    system("cls || clear");
-
-    for (i = 0; i < n; i++)
-    {
-        printf("\nNome: %s\n", aluno[i].nome);
-        printf("Idade: %d anos\n", aluno[i].idade);
-        fflush(stdin);
-
-        for (j = 0; j < c; j++)
-        {
-            printf("%dª nota: %.1f\n", j + 1, aluno[i].nota[j]);
-        }
-        printf("Média: %.1f\n", aluno[i].media);
-    }
+for (i = 0; i < n; i++)
+{
+    printf("\nNome do livro: %s\n",livro[i].nome);
+    printf("Autor: %s\n",livro[i].autor);
+    printf("Categoria: %s\n",livro[i].categoria);
+    printf("Preço (R$): %.2f\n",livro[i].preco);
+    printf("\n=================================\n");
+}
 
     return 0;
-}
+ }
